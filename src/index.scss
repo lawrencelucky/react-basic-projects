@@ -26,3 +26,8 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(45.34deg, #ea52f8 5.66%, #0066ff 94.35%);
   outline: 1px solid #0066ff;
 }
+
+::selection {
+  color: #ffffff;
+  background-color: #ea52f8;
+}

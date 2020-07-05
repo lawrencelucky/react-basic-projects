@@ -1,0 +1,28 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  background: #fff;
+  transition: all 0.5s;
+  justify-content: center;
+  justify-items: center;
+  padding: 0.5rem;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+
+  .icon {
+    width: 5rem;
+  }
+}
+
+.dark {
+  .footer {
+    background-color: #2d3748;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+}
