@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logoImage from '../../asset/icons/react-logo.svg';
-import externalLinkIcon from '../../asset/icons/external-link.svg';
 import './Projects.scss';
+import '../../asset/icons/react-logo.svg';
+import externalLinkIcon from '../../asset/icons/external-link.svg';
 
 class Projects extends Component {
   state = {
@@ -10,56 +10,68 @@ class Projects extends Component {
         title: 'Card title',
         text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
         link: 'https://www.google.com/',
+        image: '',
       },
       {
         title: 'Card title',
         text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
         link: 'https://www.google.com/',
+        image: '',
       },
       {
         title: 'Card title',
         text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
         link: 'https://www.google.com/',
+        image: '',
       },
       {
         title: 'Card title',
         text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
         link: 'https://www.google.com/',
+        image: '',
       },
       {
         title: 'Card title',
         text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
         link: 'https://www.google.com/',
+        image: '',
       },
       {
         title: 'Card title',
         text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
         link: 'https://www.google.com/',
+        image: '',
       },
       {
         title: 'Card title',
         text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
         link: 'https://www.google.com/',
+        image: '',
       },
       {
         title: 'Card title',
         text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
         link: 'https://www.google.com/',
+        image: '',
       },
     ],
   };
 
   render() {
+    const mode = localStorage.getItem('mode');
+    let classes = '';
+    if (mode === 'false') {
+      classes += ' dark';
+    }
+
     return (
-      <React.Fragment>
-        <div className='container'>
-          {this.state.projects.map((project) => (
-            <div className='card' style={{ width: '22rem' }}>
-              <img
-                src={logoImage}
-                className='logo-img card-img-top'
-                alt='logo-img'
-              />
+      <div className={classes}>
+        <div className='project-container'>
+          {this.state.projects.map((project, index) => (
+            <div key={index} className='card' style={{ width: '22rem' }}>
+              <div className='img-container'>
+                <img src={project.image} className='logo-img card-img-top' />
+              </div>
               <div className='card-body'>
                 <h5 className='card-title'>{project.title}</h5>
                 <p className='card-text'>{project.text}</p>
@@ -80,7 +92,7 @@ class Projects extends Component {
             </div>
           ))}
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

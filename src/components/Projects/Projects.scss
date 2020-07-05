@@ -1,10 +1,16 @@
-.container {
+.project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   grid-gap: 5rem;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 
   @media screen and (max-width: 991px) {
     max-width: 100%;
@@ -18,31 +24,68 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  @media (min-width: 1200px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .card {
-    border-radius: 10px !important;
-    -webkit-border-radius: 10px !important;
-    -moz-border-radius: 10px !important;
-    -ms-border-radius: 10px !important;
-    -o-border-radius: 10px !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.5s;
     box-shadow: 0 25px 15px -5px #c7c7cc;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     border: 0;
 
-    .logo-img {
-      width: 12rem;
-      display: flex;
-      align-self: center;
-      justify-content: center;
+    &:hover {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+    }
+
+    .img-container {
+      background-image: url(../../asset/icons/react-logo-sm.svg);
+      background-repeat: no-repeat;
+      // background-size: cover;
+      background-position: center;
+      width: 22rem;
+      height: 22rem;
+
+      .logo-img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+      }
     }
 
     .card-body {
-      background: linear-gradient(45.34deg, #ea52f8 5.66%, #0066ff 94.35%);
+      background: #fff;
       color: #fff;
       display: flex;
       flex-direction: column;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
 
       .card-title {
+        background: linear-gradient(45.34deg, #ea52f8 5.66%, #0066ff 94.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 2.4rem;
         text-transform: capitalize;
         letter-spacing: 0.5px;
@@ -51,6 +94,7 @@
       .card-text {
         font-size: 1.6rem;
         letter-spacing: 0.2px;
+        color: #757575;
       }
 
       .external-link-container {
@@ -60,6 +104,40 @@
         .external-link-logo {
           width: 35px;
           box-shadow: 0 5px 15px -5px #4646a0;
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  .project-container {
+    background: #2d3748;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+
+    .card {
+      background: #2d3748;
+      box-shadow: 0 25px 15px -5px #292956;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+
+      .card-body {
+        background: #2d3748;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+
+        .card-text {
+          color: #bdbdbd;
         }
       }
     }
