@@ -7,52 +7,11 @@ class Projects extends Component {
   state = {
     projects: [
       {
-        title: 'Card title',
-        text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
-        link: 'https://www.google.com/',
-        image: '',
-      },
-      {
-        title: 'Card title',
-        text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
-        link: 'https://www.google.com/',
-        image: '',
-      },
-      {
-        title: 'Card title',
-        text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
-        link: 'https://www.google.com/',
-        image: '',
-      },
-      {
-        title: 'Card title',
-        text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
-        link: 'https://www.google.com/',
-        image: '',
-      },
-      {
-        title: 'Card title',
-        text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
-        link: 'https://www.google.com/',
-        image: '',
-      },
-      {
-        title: 'Card title',
-        text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
-        link: 'https://www.google.com/',
-        image: '',
-      },
-      {
-        title: 'Card title',
-        text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
-        link: 'https://www.google.com/',
-        image: '',
-      },
-      {
-        title: 'Card title',
-        text: `Some quick example text to build on the card title and make up the bulk of the card's content.`,
-        link: 'https://www.google.com/',
-        image: '',
+        title: 'Inc-Dec App',
+        description: `Decreases the number if the subtraction sign is clicked and increases the number if the addition sign is clicked.`,
+        link: 'https://inc-dec-counter.netlify.app/',
+        image:
+          'https://res.cloudinary.com/ddu7ud0f0/image/upload/v1594051410/incdec_ppiral.jpg',
       },
     ],
   };
@@ -74,7 +33,7 @@ class Projects extends Component {
               </div>
               <div className='card-body'>
                 <h5 className='card-title'>{project.title}</h5>
-                <p className='card-text'>{project.text}</p>
+                <p className='card-text'>{project.description}</p>
                 <div className='external-link-container'>
                   <a
                     href={project.link}
