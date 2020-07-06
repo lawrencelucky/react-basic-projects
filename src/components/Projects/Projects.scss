@@ -58,6 +58,7 @@
       background-position: center;
       width: 22rem;
       height: 22rem;
+      border: 0;
 
       .logo-img {
         border-top-left-radius: 10px;
@@ -65,6 +66,8 @@
         display: flex;
         align-self: center;
         justify-content: center;
+        height: 22rem;
+        border: 0;
       }
     }
 
