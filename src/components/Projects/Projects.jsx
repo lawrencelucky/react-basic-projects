@@ -13,6 +13,13 @@ class Projects extends Component {
         image:
           'https://res.cloudinary.com/ddu7ud0f0/image/upload/v1594051410/incdec_ppiral.jpg',
       },
+      {
+        title: 'Moment App',
+        description: `The moment is an app which tells the time and also gives you today's date.`,
+        link: 'https://the-moment.netlify.app/',
+        image:
+          'https://res.cloudinary.com/ddu7ud0f0/image/upload/v1594207209/moment_wluskv.jpg',
+      },
     ],
   };
 
