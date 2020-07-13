@@ -20,6 +20,13 @@ class Projects extends Component {
         image:
           'https://res.cloudinary.com/ddu7ud0f0/image/upload/v1594207209/moment_wluskv.jpg',
       },
+      {
+        title: 'Simple Timer',
+        description: `The simple timer is an app that takes in numbers as input and converts it to the respective time.`,
+        link: 'https://the-basic-timer.netlify.app/',
+        image:
+          'https://res.cloudinary.com/ddu7ud0f0/image/upload/v1594654750/timer_hw0kup.jpg',
+      },
     ],
   };
 
